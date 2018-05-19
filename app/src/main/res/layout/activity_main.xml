@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anujdawar.udacitylesson1businesscard.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/arduino_image" />
+
+    <TextView
+        android:id="@+id/logoTextview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:text="Arduino"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="#1A237E"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoTextview"
+        android:paddingTop="15dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:id="@+id/infoTextView"
+        android:text="Arduino is an open source, computer hardware and software company, project, and user community that designs and manufactures Single-board microcontrollers and microcontroller kits for building digital devices and interactive objects that can sense and control objects in the physical world. "
+    />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_navigation_black_24dp"
+        android:layout_below="@+id/infoTextView"
+        android:layout_marginLeft="50dp"
+        android:paddingTop="20dp"
+        android:id="@+id/navigationLogo"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#C2185B"
+        android:text="Italy"
+        android:layout_toRightOf="@+id/navigationLogo"
+        android:layout_below="@id/infoTextView"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="50dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:id="@+id/buttonChahat"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:text="chahat"
+        />
+
+
+</RelativeLayout>
